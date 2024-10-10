@@ -39,7 +39,7 @@ class User(AbstractBaseUser):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = ['name']
 
-    def __str__(self):
+    def __str__(self):  # pylint: disable=unnecessary-pass
         return self.name
 
     # Métodos adicionais para permissões

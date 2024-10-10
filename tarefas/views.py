@@ -3,7 +3,8 @@ from django.shortcuts import render
 # tarefas/views.py
 from rest_framework import viewsets
 from .models import Tarefa, User
-from .serializers import TarefaSerializer, UserSerializer
+from .serializers import UserSerializer
+from .serializers import TarefaSerializer
 
 class TarefaViewSet(viewsets.ModelViewSet):
     queryset = Tarefa.objects.all()
